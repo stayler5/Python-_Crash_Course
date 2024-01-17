@@ -1,16 +1,16 @@
 class Restaurant():
-    """ A simple resturant class """
+    """ A simple restaurant class """
 
-    def __init__(self, resturant_name, cuisine_type):
-        self.resturant_name = resturant_name
+    def __init__(self, restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
 
-    def describe_resturant(self):
-        print(f"Restaurant name is: {self.resturant_name}")
+    def describe_restaurant(self):
+        print(f"Restaurant name is: {self.restaurant_name}")
         print(f"Cuisine is: {self.cuisine_type}")
 
     def open_restuarant(self):
-        print(f"{self.resturant_name} is open")
+        print(f"{self.restaurant_name} is open")
 
 class User:
 
@@ -33,7 +33,7 @@ restaurants = [Restaurant('Dominos', 'Pizza'), Restaurant('Burger King', 'Burger
 customers = [User('John', 'Smith', 'London', 'Cash'), User('Harry', 'Potter', 'Hogwarts', 'Card')]
 
 for restaurant in restaurants:
-    restaurant.describe_resturant()
+    restaurant.describe_restaurant()
     restaurant.open_restuarant()
     print("\n")
 
